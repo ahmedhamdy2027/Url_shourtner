@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}View All URLs{% endblock %}
+{% block content %}
+    {% for url in vals %}
+        <p><strong>Short:</strong> {{ url.short }} <strong>Long:</strong> {{ url.long }}</p>
+    {% endfor %}
+{% endblock %}
